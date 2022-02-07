@@ -1,0 +1,291 @@
+img {
+  padding: 5px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 220px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Noto-Serif-SC: "Noto Serif SC", cursive;
+  --Redresed: "Redresed", cursive;
+  --DM-Serif-Text: "DM Serif Text", cursive;
+  --Mukta: "Mukta", cursive;
+  --light-black: #2e2c2caf;
+  --bgggradient: linear-gradient(to bottom, #051937, #002762, #00358f, #0041bd, #124beb);
+  --light-gray: rgba(255, 255, 255, 0);
+}
+
+header a {
+  font-family: var(--Noto-Serif-SC);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+header {
+  background: #dd2476;
+  background: var(--bgggradient);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+  background: rgba(0, 0, 0, 0.815);
+  transition: all 1.5s ease;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-7 {
+  padding: 15vmin 1vmin;
+  padding-bottom: 35vmin;
+  font-family: var(--Mukta);
+  color: whitesmoke;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+  font-family: var(--DM-Serif-Text);
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+.section-1 {
+  padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-6.pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -15vmin;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 5vmin 10vmin 10vmin;
+  box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.2);
+  font-family: var(--Redresed);
+}
+
+.section-1 .row .col-md-6.panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+}
+
+.section-1 .row .col-md-6.panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url(https://cdn.wallpapersafari.com/28/75/T1qGdI.jpg);
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+  padding-top: 3vmin;
+}
+
+.cover .content {
+  padding-top: 50vmin;
+  width: 70%;
+  height: 70%;
+  background: rgba(161, 6, 6, 0.7);
+}
+
+.cover .content h1 {
+  padding-top: 10vmin;
+  font-family: var(--Mukta);
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+
+.cover .content > p {
+  font-family: var(--Redresed);
+  font-size: 2vmin;
+  color: #e5e5e5;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 5em;
+  box-shadow: 1px 2px 50px 0px #2a99d1;
+}
+
+.numbers {
+  margin-top: -15vmin;
+  padding-top: 27vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 2rem;
+  color: #2a99d1;
+}
+
+.numbers .rect p {
+  font-family: var(--DM-Serif-Text);
+}
+
+.section-3 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+footer {
+  background: #242323;
+  overflow: hidden;
+  padding: 14vmin 18vmin;
+}
+footer .container {
+  background: #242323;
+}
+footer p > span {
+  color: #007bff;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: whitesmoke;
+  border: none;
+}
+
+footer .column {
+  color: #007bff;
+}
+
+@media only screen and(max-width: 760px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+
+  .section-1 .row .col-md-6.panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .section-2 .cover {
+    background-position: -25vmin -10vmin;
+  }
+  .numbers .rect {
+    width: 10rem;
+    height: 8rem;
+  }
+
+  .numbers .rect h1 {
+    font-size: 2rem;
+  }
+  .section-3 .team {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  img {
+    display: flex;
+  }
+}
+
+@media only screen and(max-width:425px) {
+  footer .row .col-md-2 {
+    margin-top: 8vmin;
+  }
+  img {
+    display: flex;
+  }
+}
+
+@media only screen and(max-width:320px) {
+  .section-4 .card {
+    width: 18rem;
+  }
+  img {
+    display: flex;
+  }
+}
